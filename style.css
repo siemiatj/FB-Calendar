@@ -1,0 +1,104 @@
+body {
+    font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+    color: #333333;
+
+    /* IE7 sametimes has problems when background is used for just coloring */
+    background-color: white;
+    font-size: 12px;
+}
+
+#wrapper {
+    padding: 30px 10px;
+    width: 981px;
+    height: 720px;
+}
+
+#timeline {
+    width: 60px;
+    margin-right: 10px;
+    display: block;
+    float: left;
+}
+    #timeline ul {
+        padding: 0;
+        margin: 0;
+    }
+        #timeline li {
+            height: 30px;
+            font-size: 9px;
+            color: #CECECE;
+            list-style-type: none;
+            text-align: right;
+            position: relative;
+            top: -8px;
+        }
+        #timeline .minor{
+            top: -5px;
+        }
+            #timeline p {
+                display: block;
+                margin: 0;
+            }
+            #timeline .minor p {
+                width: auto;
+            }
+            #timeline .bold {
+                font-weight: bold;
+                font-size: 13px;
+                color: #686868;
+                margin-right:2px;
+            }
+
+#scheduler-wrapper {
+    border-left: 1px solid #CCCCCC;
+    background-color: #ECECEC;
+    display: block;
+    margin-left: 70px;
+    height: 100%;
+    width: 600px;
+    padding: 0 10px;
+}
+
+    #scheduler{
+        width:100%;
+        height: 100%;
+        position: relative;
+    }
+
+    #scheduler .event {
+        position: absolute;
+        overflow: hidden;
+    }
+        /* possibly requires change to border for IE's */
+        #scheduler .event .bar{
+            -moz-box-sizing: border-box;
+            -webkit-box-sizig: border-box;
+            box-sizing: border-box;
+            background-color: #4B6EA8;
+            float: left;
+            height: 100%;
+            width: 4px;
+        }
+        #scheduler .event .content {
+            background-color: white;
+            border: 1px solid #CCCCCC;
+            border-left: none;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizig: border-box;
+            box-sizing: border-box;
+            float:left;
+            height: 100%;
+        }
+            .inner-content{
+                padding: 8px;
+            }
+            .inner-content .event-title{
+                color: #4B6EA8;
+                font-size: 11px;
+                display: block;
+            }
+            .inner-content .event-location{
+                color: #CCCCCC;
+                font-size: 9px;
+                display: block;
+            }
