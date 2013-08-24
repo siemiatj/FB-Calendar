@@ -3,6 +3,9 @@ FB-Calendar
 
 Facebook-style inspired calendar view which I've been given as a recrutational task to Facebook (and failed :)).
 
+My demo :
+
+http://siemiatj.github.io/FB-Calendar
 
 The task
 ========
