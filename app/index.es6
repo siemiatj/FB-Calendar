@@ -4,6 +4,8 @@
 * jsiemiatkowski at gmail.com
 *
 */
+import './app.scss';
+
 (function(){
     /*
     * Array storing events to be rendered in the calendar
@@ -287,6 +289,6 @@
 })();
 
 //as required in the doc
-function layOutDay (events) {
+window.layOutDay = function (events) {
     return addEvents(events);
 };
