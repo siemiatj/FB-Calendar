@@ -1,7 +1,7 @@
 FB-Calendar
 ===========
 
-Facebook-style inspired calendar view which I've been given as an interview task to Facebook.
+Facebook-style inspired calendar view which I've been given as an interview task for Facebook in 2013.
 
 My demo :
 
