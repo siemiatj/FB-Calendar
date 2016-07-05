@@ -5,6 +5,16 @@
 *
 */
 import './app.scss';
+import 'babel-polyfill';
+import React from 'react';
+import { render } from 'react-dom';
+import Timeline from './components/Timeline.es6';
+
+render(
+  <Timeline />,
+  document.getElementById('timeline')
+);
+
 
 (function(){
     /*
@@ -69,7 +79,7 @@ import './app.scss';
     var fillTemplate = function (data) {
         var _template = EVENT_TEMPLATE,
             key, regex;
-        
+
         for (key in data) {
             regex     = new RegExp('{{' + key + '}}', 'ig');
             _template = (_template).replace(regex, data[key]);
@@ -102,15 +112,15 @@ import './app.scss';
                         overlappingEvent.start === currentStart && overlappingEvent.end > currentStart){
                         EVENTS_OVERLAPPING[objectKey].items[overlappingEvent.start+'*'+overlappingEvent.end+'*'+
                             overlappingEvent.position]       = 1;
-                        EVENTS_OVERLAPPING[objectKey].length += 1; 
-                    } 
-                }                  
+                        EVENTS_OVERLAPPING[objectKey].length += 1;
+                    }
+                }
             }
 
             if (!overlappingEvent){
                 EVENTS_OVERLAPPING[objectKey] = null;
             }
-        }    
+        }
     };
 
     /*
@@ -140,14 +150,14 @@ import './app.scss';
 
         if (overlapObject){
             for(var i in overlapObject.items){
-                //added for jshint 
+                //added for jshint
                 if (overlapObject.items.hasOwnProperty(i)){
                     overlapReadyIEvent = EVENTS_READY[i];
                     overlappingIEvents = EVENTS_OVERLAPPING[i].items;
 
                     for (var m in overlapObject.items){
-                        if (overlapObject.items.hasOwnProperty(m) && collidingEvents[m] !== i && 
-                            collidingEvents[i] !== m && !overlappingIEvents[m] && m !== i && 
+                        if (overlapObject.items.hasOwnProperty(m) && collidingEvents[m] !== i &&
+                            collidingEvents[i] !== m && !overlappingIEvents[m] && m !== i &&
                             m !== eventKey && i !== eventKey){
                             collidingEvents[i]   = m;
                             collidingEvents[m]   = i;
@@ -259,7 +269,7 @@ import './app.scss';
             eventEnd   = eventsData[i].end;
 
             //check if event object has the required properties. I'm skipping test for numerical value.
-            if (eventStart != null && eventEnd != null && eventStart < eventEnd && 
+            if (eventStart != null && eventEnd != null && eventStart < eventEnd &&
                 eventStart >= 0 && eventEnd <= 720){
 
                 //creating new object in case the original had any additional properties
