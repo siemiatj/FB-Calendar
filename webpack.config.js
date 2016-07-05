@@ -46,7 +46,7 @@ module.exports = {
       {
         test: /\.es6$/,
         exclude: /node_modules/,
-        loaders: 'react-hot!babel',
+        loader: 'react-hot!babel',
         include: __dirname
       },
       {
