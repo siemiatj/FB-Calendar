@@ -45,14 +45,15 @@ module.exports = {
     loaders: [
       {
         test: /\.es6$/,
-        loaders: 'react-hot!babel',
         exclude: /node_modules/,
+        loaders: 'react-hot!babel',
         include: __dirname
       },
-      // {
-      //   test: /\.scss$/,
-      //   loaders: ['style', 'css', 'sass']
-      // },
+      {
+        test: /\.scss$/,
+        exclude: /node_modules/,
+        loaders: ['style', 'css', 'sass']
+      },
       // {
       //   test: /\.svg$/,
       //   loader: 'file',
@@ -60,6 +61,7 @@ module.exports = {
       // },
       {
         test: /\.css$/,
+        exclude: /node_modules/,
         loader: 'style!css'
       },
       // {
