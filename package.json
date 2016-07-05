@@ -1,0 +1,18 @@
+{
+  "name": "FB-Calendar",
+  "version": "0.0.1",
+  "description": "Facebook-styled calendar",
+  "author": "Jakub Siemiatkowski <kuba@saskla.cz>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/siemiatj/FB-Calendar.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/siemiatj/FB-Calendar/issues"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
