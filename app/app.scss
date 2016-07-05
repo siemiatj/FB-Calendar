@@ -47,11 +47,13 @@ body {
     }
   }
 
-  .bold {
-    font-weight: bold;
-    font-size: 13px;
-    color: #686868;
-    margin-right:2px;
+  .major {
+    .bold {
+      font-weight: bold;
+      font-size: 13px;
+      color: #686868;
+      margin-right:2px;  
+    }
   }
 }
 
