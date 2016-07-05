@@ -1,7 +1,7 @@
 FB-Calendar
 ===========
 
-Facebook-style inspired calendar view which I've been given as a recrutational task to Facebook (and failed :)).
+Facebook-style inspired calendar view which I've been given as an interview task to Facebook.
 
 My demo :
 
@@ -45,3 +45,15 @@ know any filling algorithm that suits here. Details are in the comments of the f
 
 As described in the doc, a global function layOutDay was created which accepts an object or array of objects. Type of
 start/end parameters is not checked.
+
+## Installation
+
+Having node and npm installed run :
+
+`npm install`
+
+## Running
+
+`npm start`
+
+will launch a dev server at `localhost:8080`
